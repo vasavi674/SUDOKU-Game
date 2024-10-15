@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Sudoku Game</h1>
+        <div id="controls">
+            <select id="difficultySelect">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="startBtn">Start Game</button>
+        </div>
+        <div id="mistakesCounter"></div>
+        <div id="sudoku-board"></div>
+
+        <div id="numberButtons">
+            <!-- Number buttons for placing numbers 1-9 -->
+            <button class="num-btn" data-value="1">1</button>
+            <button class="num-btn" data-value="2">2</button>
+            <button class="num-btn" data-value="3">3</button>
+            <button class="num-btn" data-value="4">4</button>
+            <button class="num-btn" data-value="5">5</button>
+            <button class="num-btn" data-value="6">6</button>
+            <button class="num-btn" data-value="7">7</button>
+            <button class="num-btn" data-value="8">8</button>
+            <button class="num-btn" data-value="9">9</button>
+        </div>
+
+        <div id="message"></div>
+      <button id="tryAgainBtn">New Game</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking to external JavaScript -->
+</body>
+</html>
